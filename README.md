@@ -23,13 +23,3 @@ Share reviews with friends, discover hidden gems around the world, and build you
 ## Status
 
 🚧 Coming soon — [chips.setchy.io](https://chips.setchy.io)
-
-Interested in early access? Reach out at [hello@chips.setchy.io](mailto:hello@chips.setchy.io)
-
-## Updating the hero image
-
-Drop a new image at `assets/hero-ai.png` (recommended: 600×600 PNG or WebP), then update the `src` in `index.html`:
-
-```html
-<img src="assets/hero-ai.png" alt="Chip Index" width="260" height="260" />
-```
