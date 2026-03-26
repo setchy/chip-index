@@ -34,10 +34,16 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet" />
 
   <style>
+    /* ── FONT TOKENS ── */
+    :root {
+      --font-heading: 'Righteous', cursive;
+      --font-body: 'Inter', Arial, sans-serif;
+    }
+
     /* ── THEME TOKENS ── */
     :root {
       --bg: #130600;
@@ -146,7 +152,7 @@
     body {
       background: var(--bg);
       color: var(--fg);
-      font-family: 'Inter', Arial, sans-serif;
+      font-family: var(--font-body);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -216,7 +222,7 @@
 
     /* ── WORDMARK ── */
     h1 {
-      font-family: 'Syne', Arial, sans-serif;
+      font-family: var(--font-heading);
       font-size: clamp(3.2rem, 9vw, 6.5rem);
       font-weight: 800;
       line-height: 1;
@@ -229,7 +235,7 @@
     }
 
     .tagline {
-      font-family: 'Syne', Arial, sans-serif;
+      font-family: var(--font-heading);
       font-size: clamp(0.95rem, 2.5vw, 1.3rem);
       font-weight: 700;
       color: var(--tagline);
@@ -244,7 +250,78 @@
       max-width: 540px;
       line-height: 1.75;
       text-align: center;
+      margin-bottom: 16px;
+    }
+
+    /* ── ROTATING LOCAL NAME ── */
+    .localname {
+      position: relative;
+      height: 2.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 38px;
+      overflow: hidden;
+    }
+
+    .localname-track {
+      position: relative;
+      display: inline-block;
+      min-width: 180px;
+      height: 100%;
+    }
+
+    .localname-track span {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--badge-color);
+      opacity: 0;
+      animation: wordcycle 36s infinite;
+    }
+
+    .localname-track span:nth-child(1) { animation-delay: 0s; }
+    .localname-track span:nth-child(2) { animation-delay: 3s; }
+    .localname-track span:nth-child(3) { animation-delay: 6s; }
+    .localname-track span:nth-child(4) { animation-delay: 9s; }
+    .localname-track span:nth-child(5) { animation-delay: 12s; }
+    .localname-track span:nth-child(6) { animation-delay: 15s; }
+    .localname-track span:nth-child(7) { animation-delay: 18s; }
+    .localname-track span:nth-child(8) { animation-delay: 21s; }
+    .localname-track span:nth-child(9) { animation-delay: 24s; }
+    .localname-track span:nth-child(10) { animation-delay: 27s; }
+    .localname-track span:nth-child(11) { animation-delay: 30s; }
+    .localname-track span:nth-child(12) { animation-delay: 33s; }
+
+    @keyframes wordcycle {
+      0% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      2% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      6% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      8% {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
     }
 
     /* ── RATING DIMENSIONS ── */
@@ -549,7 +626,7 @@
       gap: 8px;
       background: linear-gradient(135deg, #ea580c, #dc2626);
       color: #fff;
-      font-family: 'Syne', Arial, sans-serif;
+      font-family: var(--font-heading);
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.02em;
@@ -686,16 +763,33 @@
 
   <main class="hero">
 
-    <div class="badge">Coming Soon</div>
+    <div class="badge">Frying Soon</div>
 
     <h1>Chip Index</h1>
     <p class="tagline">Rate the crunch. Share the obsession.</p>
 
     <p class="description">
-      The world&rsquo;s first social platform for chip lovers.<br />Check in, rate, and discover
-      every starch-based snack on the planet (potato chips, hot chips, fries, and more) &mdash;
-      then share the experience with friends around the globe.
+      The world&rsquo;s first social platform for chip lovers.<br />
+      Check in, rate, and share the obsession with friends around the globe &mdash;
+      whatever you call them.
     </p>
+
+    <div class="localname" aria-label="Known as chips, crisps, hot chips, wedges, frites, patatine, ポテチ, and wafers around the world">
+      <span class="localname-track">
+        <span>🇺🇸&nbsp;potato chips</span>
+        <span>🇬🇧&nbsp;crisps</span>
+        <span>🇦🇺&nbsp;hot chips</span>
+        <span>🇦🇺&nbsp;wedges</span>
+        <span>🇦🇺&nbsp;potato gems</span>
+        <span>🇦🇺&nbsp;potato scallops</span>
+        <span>🇺🇸&nbsp;curly fries</span>
+        <span>🇫🇷&nbsp;frites</span>
+        <span>🇮🇹&nbsp;patatine</span>
+        <span>🇪🇸&nbsp;papas fritas</span>
+        <span>🇯🇵&nbsp;ポテチ</span>
+        <span>🇮🇳&nbsp;wafers</span>
+      </span>
+    </div>
 
     <div class="dimensions">
       <span class="dim dim-hotness" data-tooltip="Served piping hot or tragically lukewarm?">🌶️ Hotness</span>
@@ -729,13 +823,13 @@
   <script>
     const toggle = document.getElementById('themeToggle');
     const root = document.documentElement;
-    const stored = localStorage.getItem('chip-theme');
+
+    // ── Theme ──
+    const storedTheme = localStorage.getItem('chip-theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initial = stored || (prefersDark ? 'dark' : 'light');
-
-    root.dataset.theme = initial;
-    toggle.textContent = initial === 'dark' ? '🌙' : '☀️';
-
+    const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+    root.dataset.theme = initialTheme;
+    toggle.textContent = initialTheme === 'dark' ? '🌙' : '☀️';
     toggle.addEventListener('click', () => {
       const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
       root.dataset.theme = next;
