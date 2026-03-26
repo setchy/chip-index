@@ -269,38 +269,176 @@
       cursor: default;
     }
 
-    .dim-hotness { background: rgba(220, 38, 38, 0.1);  border-color: rgba(220, 38, 38, 0.35);  color: #fca5a5; }
-    .dim-sauce   { background: rgba(234, 88, 12, 0.1);  border-color: rgba(234, 88, 12, 0.35);  color: #fdba74; }
-    .dim-season  { background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.35); color: #fde68a; }
-    .dim-crunch  { background: rgba(132, 204, 22, 0.1); border-color: rgba(132, 204, 22, 0.35); color: #bef264; }
-    .dim-value   { background: rgba(34, 197, 94, 0.1);  border-color: rgba(34, 197, 94, 0.35);  color: #86efac; }
-    .dim-repeat  { background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.35); color: #c7d2fe; }
-    .dim-drink   { background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.35); color: #fef08a; }
+    .dim-hotness {
+      background: rgba(220, 38, 38, 0.1);
+      border-color: rgba(220, 38, 38, 0.35);
+      color: #fca5a5;
+    }
+
+    .dim-sauce {
+      background: rgba(234, 88, 12, 0.1);
+      border-color: rgba(234, 88, 12, 0.35);
+      color: #fdba74;
+    }
+
+    .dim-season {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: #fde68a;
+    }
+
+    .dim-crunch {
+      background: rgba(132, 204, 22, 0.1);
+      border-color: rgba(132, 204, 22, 0.35);
+      color: #bef264;
+    }
+
+    .dim-value {
+      background: rgba(34, 197, 94, 0.1);
+      border-color: rgba(34, 197, 94, 0.35);
+      color: #86efac;
+    }
+
+    .dim-repeat {
+      background: rgba(99, 102, 241, 0.1);
+      border-color: rgba(99, 102, 241, 0.35);
+      color: #c7d2fe;
+    }
+
+    .dim-drink {
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.35);
+      color: #fef08a;
+    }
 
     /* Light mode dimension overrides — darker, readable colours on parchment */
     @media (prefers-color-scheme: light) {
-      .dim-hotness { background: rgba(220, 38, 38, 0.08);  border-color: rgba(220, 38, 38, 0.4);  color: #991b1b; }
-      .dim-sauce   { background: rgba(234, 88, 12, 0.08);  border-color: rgba(234, 88, 12, 0.4);  color: #9a3412; }
-      .dim-season  { background: rgba(180, 110, 0, 0.08);  border-color: rgba(180, 110, 0, 0.4);  color: #78350f; }
-      .dim-crunch  { background: rgba(77, 124, 15, 0.08);  border-color: rgba(77, 124, 15, 0.4);  color: #3f6212; }
-      .dim-value   { background: rgba(22, 163, 74, 0.08);  border-color: rgba(22, 163, 74, 0.4);  color: #14532d; }
-      .dim-repeat  { background: rgba(79, 70, 229, 0.08);  border-color: rgba(79, 70, 229, 0.4);  color: #3730a3; }
-      .dim-drink   { background: rgba(180, 130, 0, 0.08);  border-color: rgba(180, 130, 0, 0.4);  color: #713f12; }
+      .dim-hotness {
+        background: rgba(220, 38, 38, 0.08);
+        border-color: rgba(220, 38, 38, 0.4);
+        color: #991b1b;
+      }
+
+      .dim-sauce {
+        background: rgba(234, 88, 12, 0.08);
+        border-color: rgba(234, 88, 12, 0.4);
+        color: #9a3412;
+      }
+
+      .dim-season {
+        background: rgba(180, 110, 0, 0.08);
+        border-color: rgba(180, 110, 0, 0.4);
+        color: #78350f;
+      }
+
+      .dim-crunch {
+        background: rgba(77, 124, 15, 0.08);
+        border-color: rgba(77, 124, 15, 0.4);
+        color: #3f6212;
+      }
+
+      .dim-value {
+        background: rgba(22, 163, 74, 0.08);
+        border-color: rgba(22, 163, 74, 0.4);
+        color: #14532d;
+      }
+
+      .dim-repeat {
+        background: rgba(79, 70, 229, 0.08);
+        border-color: rgba(79, 70, 229, 0.4);
+        color: #3730a3;
+      }
+
+      .dim-drink {
+        background: rgba(180, 130, 0, 0.08);
+        border-color: rgba(180, 130, 0, 0.4);
+        color: #713f12;
+      }
     }
-    html[data-theme="light"] .dim-hotness { background: rgba(220, 38, 38, 0.08);  border-color: rgba(220, 38, 38, 0.4);  color: #991b1b; }
-    html[data-theme="light"] .dim-sauce   { background: rgba(234, 88, 12, 0.08);  border-color: rgba(234, 88, 12, 0.4);  color: #9a3412; }
-    html[data-theme="light"] .dim-season  { background: rgba(180, 110, 0, 0.08);  border-color: rgba(180, 110, 0, 0.4);  color: #78350f; }
-    html[data-theme="light"] .dim-crunch  { background: rgba(77, 124, 15, 0.08);  border-color: rgba(77, 124, 15, 0.4);  color: #3f6212; }
-    html[data-theme="light"] .dim-value   { background: rgba(22, 163, 74, 0.08);  border-color: rgba(22, 163, 74, 0.4);  color: #14532d; }
-    html[data-theme="light"] .dim-repeat  { background: rgba(79, 70, 229, 0.08);  border-color: rgba(79, 70, 229, 0.4);  color: #3730a3; }
-    html[data-theme="light"] .dim-drink   { background: rgba(180, 130, 0, 0.08);  border-color: rgba(180, 130, 0, 0.4);  color: #713f12; }
-    html[data-theme="dark"]  .dim-hotness { background: rgba(220, 38, 38, 0.1);  border-color: rgba(220, 38, 38, 0.35);  color: #fca5a5; }
-    html[data-theme="dark"]  .dim-sauce   { background: rgba(234, 88, 12, 0.1);  border-color: rgba(234, 88, 12, 0.35);  color: #fdba74; }
-    html[data-theme="dark"]  .dim-season  { background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.35); color: #fde68a; }
-    html[data-theme="dark"]  .dim-crunch  { background: rgba(132, 204, 22, 0.1); border-color: rgba(132, 204, 22, 0.35); color: #bef264; }
-    html[data-theme="dark"]  .dim-value   { background: rgba(34, 197, 94, 0.1);  border-color: rgba(34, 197, 94, 0.35);  color: #86efac; }
-    html[data-theme="dark"]  .dim-repeat  { background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.35); color: #c7d2fe; }
-    html[data-theme="dark"]  .dim-drink   { background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.35); color: #fef08a; }
+
+    html[data-theme="light"] .dim-hotness {
+      background: rgba(220, 38, 38, 0.08);
+      border-color: rgba(220, 38, 38, 0.4);
+      color: #991b1b;
+    }
+
+    html[data-theme="light"] .dim-sauce {
+      background: rgba(234, 88, 12, 0.08);
+      border-color: rgba(234, 88, 12, 0.4);
+      color: #9a3412;
+    }
+
+    html[data-theme="light"] .dim-season {
+      background: rgba(180, 110, 0, 0.08);
+      border-color: rgba(180, 110, 0, 0.4);
+      color: #78350f;
+    }
+
+    html[data-theme="light"] .dim-crunch {
+      background: rgba(77, 124, 15, 0.08);
+      border-color: rgba(77, 124, 15, 0.4);
+      color: #3f6212;
+    }
+
+    html[data-theme="light"] .dim-value {
+      background: rgba(22, 163, 74, 0.08);
+      border-color: rgba(22, 163, 74, 0.4);
+      color: #14532d;
+    }
+
+    html[data-theme="light"] .dim-repeat {
+      background: rgba(79, 70, 229, 0.08);
+      border-color: rgba(79, 70, 229, 0.4);
+      color: #3730a3;
+    }
+
+    html[data-theme="light"] .dim-drink {
+      background: rgba(180, 130, 0, 0.08);
+      border-color: rgba(180, 130, 0, 0.4);
+      color: #713f12;
+    }
+
+    html[data-theme="dark"] .dim-hotness {
+      background: rgba(220, 38, 38, 0.1);
+      border-color: rgba(220, 38, 38, 0.35);
+      color: #fca5a5;
+    }
+
+    html[data-theme="dark"] .dim-sauce {
+      background: rgba(234, 88, 12, 0.1);
+      border-color: rgba(234, 88, 12, 0.35);
+      color: #fdba74;
+    }
+
+    html[data-theme="dark"] .dim-season {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: #fde68a;
+    }
+
+    html[data-theme="dark"] .dim-crunch {
+      background: rgba(132, 204, 22, 0.1);
+      border-color: rgba(132, 204, 22, 0.35);
+      color: #bef264;
+    }
+
+    html[data-theme="dark"] .dim-value {
+      background: rgba(34, 197, 94, 0.1);
+      border-color: rgba(34, 197, 94, 0.35);
+      color: #86efac;
+    }
+
+    html[data-theme="dark"] .dim-repeat {
+      background: rgba(99, 102, 241, 0.1);
+      border-color: rgba(99, 102, 241, 0.35);
+      color: #c7d2fe;
+    }
+
+    html[data-theme="dark"] .dim-drink {
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.35);
+      color: #fef08a;
+    }
 
     /* ── DIMENSION TOOLTIPS ── */
     .dim[data-tooltip]::before,
