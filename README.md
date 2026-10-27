@@ -63,7 +63,7 @@ Chip Index meets every chip where it lives:
 
 > [!NOTE]
 > **Frying soon** — Chip Index is still in the fryer. Follow along at
-> [chips.setchy.io][website].
+> [chipindex.app][website].
 
 Want early access? [Get in touch][contact] and we'll save you a seat at the
 table.
@@ -80,7 +80,7 @@ python3 -m http.server 8000
 ```
 
 Then open <http://localhost:8000>. The site deploys with GitHub Pages and is
-served at [chips.setchy.io][website] via [`CNAME`](CNAME).
+served at [chipindex.app][website] via [`CNAME`](CNAME).
 
 ## 📬 Community & Support
 
@@ -89,12 +89,12 @@ served at [chips.setchy.io][website] via [`CNAME`](CNAME).
 
 ---
 
-© Chip Index — [chips.setchy.io][website]
+© Chip Index — [chipindex.app][website]
 
 <!-- LINK LABELS -->
 
 [social]: assets/social.png
-[website]: https://chips.setchy.io
+[website]: https://chipindex.app
 [contact]: https://setchy.io
 [untappd]: https://untappd.com
 
@@ -103,4 +103,4 @@ served at [chips.setchy.io][website] via [`CNAME`](CNAME).
 [renovate]: https://github.com/setchy/chip-index/blob/main/renovate.json
 
 [status-badge]: https://img.shields.io/badge/status-frying%20soon-orange
-[website-badge]: https://img.shields.io/website?url=https%3A%2F%2Fchips.setchy.io&logo=githubpages&logoColor=white
+[website-badge]: https://img.shields.io/website?url=https%3A%2F%2Fchipindex.app&logo=githubpages&logoColor=white
